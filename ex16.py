@@ -1,3 +1,4 @@
+# list of arguments, starting with name of script, then names of files passed to sys
 from sys import argv
 
 script, filename = argv
