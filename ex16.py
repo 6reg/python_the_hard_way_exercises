@@ -1,4 +1,3 @@
-# list of arguments, starting with name of script, then names of files passed to sys
 from sys import argv
 
 script, filename = argv
@@ -17,8 +16,8 @@ target.truncate()
 
 print "Now I'm going to ask you for three lines."
 
-line1 = raw_input("line 1: ")
-line2 = raw_input("line 2: ")
+line1 = raw_input("line1: ")
+line2 = raw_input("line2: ")
 line3 = raw_input("line 3: ")
 
 print "I'm going to write these to the file."
