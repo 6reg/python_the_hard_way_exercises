@@ -24,10 +24,18 @@ iq = divide(100, 2)
 
 print "Age: %d, Height: %d, Weight: %d, IQ: %d" % (age, height, weight, iq)
 
+def myformula(a, b):
+    return a + 34 / b - 1023
 
+what = myformula(24, 100)
+print "My formula: %d" % what
 # A puzzle for the extra credit, type it in anyway.
 print "here is a puzzle."
 
 what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
 
 print "That becomes: ", what, "Can you do it by hand?"
+
+int(raw_input())
+
+float(raw_input())
