@@ -1,17 +1,16 @@
 from sys import argv
-
 script, filename = argv
 
-print "We're goin to erase %r." % filename
-print "If you don't want that , hit CTRL-C (^C)."
-print "If you do want that, hit RETURN."
+print "We're going to earase %r." % filename
+print "If you don't want that, hit CTRL-C (^C)."
+print "if you do want that, hit RETURN."
 
-raw_input(">")
+raw_input("?")
 
 print "Opening the file..."
 target = open(filename, 'w')
 
-print "Turncationg the file. Goodby!"
+print "Truncating the file. Goodbye!"
 target.truncate()
 
 print "Now I'm going to ask you for three lines."
@@ -24,7 +23,6 @@ print "I'm going to write these to the file."
 
 target.write(line1)
 target.write("\n")
-target.write("just adding this string in here\n")
 target.write(line2)
 target.write("\n")
 target.write(line3)
@@ -32,3 +30,4 @@ target.write("\n")
 
 print "And finally, we close it."
 target.close()
+
