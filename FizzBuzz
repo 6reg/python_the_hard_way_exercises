@@ -1,0 +1,6 @@
+// create popup that asks user for number and store the number in variable 'answer', wrap the prompt call in a parseInt function to ensure a number is returned from the user input
+
+let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to."));
+
+for (let i = 1; i <= answer; i++) {
+
