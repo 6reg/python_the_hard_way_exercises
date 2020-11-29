@@ -1,5 +1,6 @@
 age = raw_input("How old are you? ")
 height = raw_input("How tall are you? ")
-weight = raw_input("How much do you weigh? ")
+ice_cream = raw_input("What's your favorite ice cream? ")
+song = raw_input("What's your favorite song? ")
 
-print "So, you're %r old, %r tall and %r heavy." % (age, height, weight)
+print "Your fav song is %r, you love %r and you're %r years old." % (song, ice_cream, age)
