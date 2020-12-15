@@ -2,4 +2,3 @@
 
 :smile:
 :rocket:
-:laugh:
