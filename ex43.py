@@ -80,5 +80,42 @@ class CentralCorridor(Scene):
             wall and pass out. You wake up shortly after only to 
             die as the Gothon stomps on your head and eats you.
             """))
+        return 'death'
 
-    
+    elif action == "tell a joke":
+        print(dedent("""
+            Lucky for you they made you learn Gothon insults in
+            the academy. You tell the one Gothon joke you know:
+            Blah blah blah blah. The Gothon stops, tries not to 
+            lacugh, then busts out laughing and can't move. While
+            he's laughing you run up and shoot him square in the 
+            head putting him down, then jump through the Weapon
+            Armory Door.
+            """))
+        return 'laser_weapon_armory'
+
+    else: 
+        print("DOES NOT COMPUTE!")
+        return 'central_corridor'
+
+
+            # be sure to print out the last scene
+            current_scene.enter()
+
+class Death(Scene):
+
+    quips = [
+            "You died. You kinda suck at this.",
+            "Your Mom would be proud...if she were smarter.",
+            "Such a luser.",
+            "I have a small puppy that's better at this.",
+            "You're worse than your Dad's jokes."
+        ]
+
+    def enter(self):
+        print(Death.quips[randint(0, len(self.quips)-1)])
+        exit(1)
+
+class CentralCorridor(Scene):
+
+    def enter(self):
