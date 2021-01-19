@@ -26,8 +26,16 @@ class Engine(object):
 
 class Home(Scene):
 
+    scenarios = [
+            "Starting out, leaving front door with fishing pole, walking 
+            towards the forest..",
+            "Starting out, forget to bring fishing pole...",
+            "Stay home, don't go fishing."
+    ]
+
     def enter(self):
-        pass
+        print(Scene.scenarios[randint(0, len(self.scenarios)-1)])
+        exit(1)
 
 class Forest(Scene):
 
