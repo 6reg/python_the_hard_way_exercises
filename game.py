@@ -40,7 +40,35 @@ class Home(Scene):
 class Forest(Scene):
 
     def enter(self):
-        pass
+        print(dedent("""
+             You're walking through the forest. 
+             You're carrying your fishing pole. 
+             It's a beautiful day.
+             """))
+        
+        action = input("> ")
+
+        if action == "turn around and go back home":
+            print(dedent("""
+                you get lazy. you turn around and go back home
+                """))
+            return 'home'
+
+        elif action == "keep walking":
+            print(dedent("""
+                you keep walking towards the river. You're almost there. 
+                """))
+            return 'forest'
+
+        elif action == "take a break":
+            print(dedent("""
+                it's hot outside. you stop at a tree stump and take a break.
+                """))
+            return 'forest'
+
+        else:
+            print("You make it to the river")
+            return 'river'
 
 class River(Scene):
 
