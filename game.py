@@ -11,7 +11,7 @@ class Scene(object):
 class Engine(object):
 
     def __init__(self, scene_map):
-        self.scene_map = scene-map 
+        self.scene_map = scene_map 
 
     def play(self):
         current_scene = self.scene_map.opening_scene()
@@ -27,8 +27,7 @@ class Engine(object):
 class Home(Scene):
 
     scenarios = [
-            "Starting out, leaving front door with fishing pole, walking 
-            towards the forest..",
+           "Starting out, leaving front door with fishing pole, walking towards the forest..",
             "Starting out, forget to bring fishing pole...",
             "Stay home, don't go fishing."
     ]
@@ -73,18 +72,47 @@ class Forest(Scene):
 class River(Scene):
 
     def enter(self):
-        pass
+        print(dedent("""
+            you make it to the river. it's beautiful. the sound of the water
+            rushing past the rocks. You start catching fish
+            """))
+        code = f"{randint(1,9)}{randint(1,9)}{randint(1,9)}"
+        guess = input("[keypad]> ")
+        guesses = 0
+
+        while guess != code and guesses < 10:
+            print("Buzzz")
+            guesses += 1
+            guess = input("[keypad]> ")
+
+        if guess == code:
+            print(dedent("""
+                you guessed the correct code to unlock the fishery
+                """))
+            return 'forest'
+        else: 
+            print(dedent("""
+                you didn't guess the code and fall asleep
+                """))
+            return 'river'
 
 class Map(object):
 
+    scenes = {
+        'home': Home(),
+        'forest': Forest(),
+        'river': River(),
+    }
+    
     def __init__(self, start_scene):
-        pass
+        self.start_scene = start_scene
 
     def next_scene(self, scene_name):
-        pass
+        val = Map.scenes.get(scene_name)
+        return val
 
     def opening_scene(self):
-        pass
+        return self.next_scene(self.start_scene)
 
 a_map = Map('home')
 a_game = Engine(a_map)
