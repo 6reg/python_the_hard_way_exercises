@@ -27,13 +27,13 @@ class Engine(object):
 class Home(Scene):
 
     scenarios = [
-           "Starting out, leaving front door with fishing pole, walking towards the forest..",
+           "Starting out, leaving front door with fishing pole",
             "Starting out, forget to bring fishing pole...",
             "Stay home, don't go fishing."
     ]
 
     def enter(self):
-        print(Scene.scenarios[randint(0, len(self.scenarios)-1)])
+        print(Home.scenarios[randint(0, len(self.scenarios)-1)])
         exit(1)
 
 class Forest(Scene):
