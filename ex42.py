@@ -6,15 +6,17 @@
 
 # Animal is-a object
 class Animal(object):
-    pass
+    print("Animal is-a object")
 
+Animal()
 # Dog is-a Animal
 class Dog(Animal):
 
     def __init__(self, name):
         # self has-a name
         self.name = name
-        
+        print(self, name) 
+
 # Cat is-a Animal
 class Cat(Animal):
 
