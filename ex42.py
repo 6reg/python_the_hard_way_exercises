@@ -23,6 +23,7 @@ class Cat(Animal):
     def __init__(self, name):
         # self has-a name
         self.name = name
+        print(f"name")
 
 # Person is-a object
 class Person(object):
