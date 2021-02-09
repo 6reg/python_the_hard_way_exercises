@@ -1,8 +1,5 @@
-print "Age: ",
-age = raw_input()
-print "Height: ",
-height = raw_input()
-print "Weight: ",
-weight = raw_input()
+age = input("Age: ")
+height = input("Height: ")
+weight = input("Weight: ")
 
-print "You're %r years old, %r tall, and %r fat." % ( age, height, weight )
+print(f"{age} years old, {height} tall and {weight} heavy")
