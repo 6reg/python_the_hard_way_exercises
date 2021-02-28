@@ -1,4 +1,3 @@
-import ex25.py
 print("How old are you?", end=' ')
 age = input()
 print("How tall are you?", end=' ')
@@ -24,7 +23,7 @@ txt_again = open(file_again)
 print(txt_again.read())
 
 
-print("Let\'s practice everything.")
+print("Let's practice everything.")
 print("You\'d need to know \'bout escapes with \\ that do \n newlines and \t tabs.")
 
 poem = """
@@ -47,12 +46,12 @@ print(f"This should be five: {five}")
 def secret_formula(started):
     jelly_beans = started * 500
     jars = jelly_beans / 1000
-    crates = jars % 100
+    crates = jars / 100
     return jelly_beans, jars, crates
 
 
 start_point = 10000
-beans, jars = secret_formula(start_point)
+beans, jars, crates = secret_formula(start_point)
 
 # remember that this is another way to format a string
 print("With a starting point of: {}".format(start_point))
