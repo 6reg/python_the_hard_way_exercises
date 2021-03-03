@@ -1,0 +1,7 @@
+spam = 3
+if spam = 1:
+	print('howdy')
+elif spam = 2:
+	print('Howdy')
+else:
+	print('Greetings!')
