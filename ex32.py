@@ -11,11 +11,9 @@ for fruit in fruits:
 for i in change: 
     print(f"I got {i}")
 
-elements = []
+elements = [0, 1, 2, 3, 4, 5]
 
-for i in range(0, 6):
-    print(f"Adding {i} to the list")
-    elements.append(i)
+print(f"Adding {i} to the list")
 
 for i in elements: 
     print(f"Element was: {i}")
