@@ -11,5 +11,5 @@ while i < 6:
 
 print("The numbers: ")
 
-for numb in numbers:
+for num in numbers:
     print(num)
