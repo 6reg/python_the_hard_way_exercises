@@ -17,3 +17,6 @@ print(f"Adding {i} to the list")
 
 for i in elements: 
     print(f"Element was: {i}")
+
+for i in elements:
+    print("{i}")
