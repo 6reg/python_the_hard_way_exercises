@@ -2,7 +2,7 @@
 def countUp(numTimes, b):
     i = 0
     numbers = []
-    while i < numtimes:
+    while i < numTimes:
         print(f"At the top i is {i}")
         numbers.append(i)
 
@@ -11,5 +11,5 @@ def countUp(numTimes, b):
         print(f"At the bottom i is {i}")
     
     print("The Numbers: ")
-
+    print(numbers)
 countUp(6, 2)
