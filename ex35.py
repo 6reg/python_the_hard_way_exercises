@@ -57,10 +57,11 @@ def dead(why):
    exit(0)
 
 def start():
+    # prints to screen
    print("You are in a dark room.")
    print("There is a door to your right and left.")
    print("Which one do you take?")
-
+    # gets input from user
    choice = input("> ")
 
    if choice == "left":
@@ -68,6 +69,8 @@ def start():
    elif choice == "right":
        cthulhu_room()
    else: 
+       # calls dead function with text as first arg
+       # exit(0) exits without error 
        dead("You stumble around the room until you starve.")
    
 
