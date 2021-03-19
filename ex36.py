@@ -11,3 +11,11 @@ def begin():
         skiing()
     elif "Board" in grab:
         boarding()
+
+def skiing():
+    print("You are going skiing!")
+
+def boarding():
+    print("You are going boarding!")
+
+begin()
