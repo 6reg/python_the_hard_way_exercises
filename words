@@ -14,3 +14,15 @@ finally		Exceptions or not, do this now.		finally: pass
 for 		Loop over a collection of things.	for X in Y: pass
 from		Import specific parts of a module. 	from x import Y
 global		Declare that you want a global variable	global X
+if		If condition. 				if: X; elif: Y; else: Jimport 	       Import a module into this one 	       import os
+in		Part of for-loops. Also text X in Y.	for X in Y: pass
+is		Like==to test equality.			1 is 1==True
+lambda		Create a short anonymous function.	s=lambda y: y**y;s(3)
+not		Logical not. 			        not True == False
+or 		Logical or. 				True or False == True
+pass		This block is empty. 			def empty(): pass
+raise		Raise exception when things go wrong.	raise ValueError('no'
+try		Try block, if exception, go to except.	try: pass
+with		With an expression as a variable do. 	with X as Y: pass
+yield 		Pause here and return to caller. 	def X(): yield Y; X().next)
+										
