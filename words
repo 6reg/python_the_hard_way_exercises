@@ -2,3 +2,15 @@ and		logical and				True and False == False
 as		Part of the with-as statement.		with X as Y: pass
 assert		Assert(ensure) that something is true.	assert False, "Error!"
 break 		Stop this loop right now.		while True: break
+class 		Define a class.				class Person(object)
+continue 	Don't process more of loop		while True: continue
+def		Define a function. 			def X(): pass
+del 		Delete from dictionary. 		del X[Y]
+elif		Else if condition. 			if: X; elif: Y; else: J
+else		Else condition.				if: X; ""
+except		If an exception happens, do this. 	except ValueError: print
+exec		Run a string as Python.			exec 'print("hello")'
+finally		Exceptions or not, do this now.		finally: pass
+for 		Loop over a collection of things.	for X in Y: pass
+from		Import specific parts of a module. 	from x import Y
+global		Declare that you want a global variable	global X
