@@ -1,3 +1,4 @@
+KEYWORD 	DESCRIPTION				EXAMPLE
 and		logical and				True and False == False
 as		Part of the with-as statement.		with X as Y: pass
 assert		Assert(ensure) that something is true.	assert False, "Error!"
@@ -24,5 +25,8 @@ pass		This block is empty. 			def empty(): pass
 raise		Raise exception when things go wrong.	raise ValueError('no'
 try		Try block, if exception, go to except.	try: pass
 with		With an expression as a variable do. 	with X as Y: pass
-yield 		Pause here and return to caller. 	def X(): yield Y; X().next)
-										
+yield 		Pause here and return to caller. 	def X(): yield Y; X().ne
+									
+TYPE		DESCRIPTION				EXAMPLE
+True		True Boolean value.			True or False == True
+False  		False Boolean value. 			False and True == False

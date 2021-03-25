@@ -12,3 +12,13 @@ for x in range(WIDTH):
             column.append('O') # Add a living cell. 
         else:
             column.append('  ') # Add a dead cell.
+    nextCells.append(column) # nextCells is a list of column lists.
+
+while True: # Main program loop. 
+    print('\n\n\n\n\n') # Separate each step with newlines.
+    currentCells = copy.deepcopy(nextCells)
+    
+    # Print currentCells on the screen:
+    for y in range(HEIGHT):
+        for x in range(WIDTH):
+            print(currrentCells[x][y], end='') # Print the 'O' or space
