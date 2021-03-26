@@ -15,7 +15,7 @@ finally		Exceptions or not, do this now.		finally: pass
 for 		Loop over a collection of things.	for X in Y: pass
 from		Import specific parts of a module. 	from x import Y
 global		Declare that you want a global variable	global X
-if		If condition. 				if: X; elif: Y; else: Jimport 	       Import a module into this one 	       import os
+if		If condition. 				if: X; elif: Y; else: Jimport 	        Import a module into this one 	        import os
 in		Part of for-loops. Also text X in Y.	for X in Y: pass
 is		Like==to test equality.			1 is 1==True
 lambda		Create a short anonymous function.	s=lambda y: y**y;s(3)
@@ -29,4 +29,17 @@ yield 		Pause here and return to caller. 	def X(): yield Y; X().ne
 									
 TYPE		DESCRIPTION				EXAMPLE
 True		True Boolean value.			True or False == True
-False  		False Boolean value. 			False and True == False
+False  		False Boolean value. 			False and True == Fals
+None		Represents "nothing", "no value".	x = None
+bytes		Stores bytes, of text, png, file, etc.	x = b"hello"
+strings		Stores textual information.		x = "hello"
+numbers 	Stores integers. 			i = 100
+floats		Stores decimals.			i = 10.389
+lists		Stores a list of things. 		j = [1,2,3,4]
+dicts		Stores a key=value mapping of things. 	e = {'x': 1, 'y': 2}
+
+OPERATOR	DESCRIPTION				EXAMPLE
++		Addition				2 + 4 == 6
+-		Subtraction				2 - 4 == -2
+* 		Multiplication				2 * 4 == 8
+** 		Power of				2 ** 4 == 16
