@@ -43,3 +43,7 @@ OPERATOR	DESCRIPTION				EXAMPLE
 -		Subtraction				2 - 4 == -2
 * 		Multiplication				2 * 4 == 8
 ** 		Power of				2 ** 4 == 16
+/ 		Division				2 / 4 == 0.5
+//		Floor division				2 // 4 == 0
+%		String interpolate or modulus		2 % 4 == 2
+
