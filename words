@@ -46,4 +46,15 @@ OPERATOR	DESCRIPTION				EXAMPLE
 / 		Division				2 / 4 == 0.5
 //		Floor division				2 // 4 == 0
 %		String interpolate or modulus		2 % 4 == 2
+== 		Equal					4 == 5 == False
+{}		Dict curly braces			{'x': 5, 'y': 10}
+@		At(decorators)				@classmethod
+,		Comma					range(0, 10)
+=		Assign equal				x = 10
++= 		Add and assign				x = 1; x += 2
+-=		Subtract and assign			x = 1; x -= 2
+*=		Multiply and assign			x = 1; x *= 2
+/= 		Divide and assign			x = 1; x /= 2
+//=		Floor divide and assign			x = 1; x //= 2
+%=		Modulus assign				x = 1; x %= 2
 
