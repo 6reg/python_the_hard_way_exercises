@@ -10,6 +10,16 @@ for experimentNumber in range(10000):
         else:
          listOfHeadsOrTails += "T"
 
-    if listOfHeadsOrTails[n] == listOfHeadsOrTails[n+1]
     # Code that checks if there is a streak of 6 heads or tails in a row. 
+    for i in range(len(listOfHeadsOrTails)):
+        if i == 0:
+            pass
+        elif listOfHeadsOrTails[i] == listOfHeadsOrTails[i - 1]:
+            streak += 1
+        else:
+            streak = 0
+        
+        if streak == 6:
+            numberOfStreaks += 1
+
 print('Chance of streak: %s%%' % (numberOfStreaks / 100))
