@@ -1,25 +1,33 @@
 import random
-numberOfStreaks = 0
-for experimentNumber in range(10000):
-    # Code that creates a list of 100 'heads' or 'tails' values.
-    listOfHeadsOrTails = []
-    flip = random.randint(0, 1) 
-    for i in range(100):
-        if flip == 0:
-         listOfHeadsOrTails += "H"
-        else:
-         listOfHeadsOrTails += "T"
+results = []
+hstreak = 0
+tstreak = 0
+totalstreak = 0
 
-    # Code that checks if there is a streak of 6 heads or tails in a row. 
-    for i in range(len(listOfHeadsOrTails)):
-        if i == 0:
-            pass
-        elif listOfHeadsOrTails[i] == listOfHeadsOrTails[i - 1]:
-            streak += 1
-        else:
-            streak = 0
-        
-        if streak == 6:
-            numberOfStreaks += 1
+for i in range(10000):
+    results = []
 
-print('Chance of streak: %s%%' % (numberOfStreaks / 100))
+    for k in range(100):
+        if random.randint(0,1) == 0:
+            results += ['t']
+        else:
+            results += ['h']
+
+for c in range(100):
+    if results[c] == 't':
+        #hstreak = 0
+        tstreak += 1
+
+        if tstreak == 6:
+            totalstreak += 1
+            tstreak = 0
+
+    if results[c] == 'h':
+        #tstreak = 0
+        hstreak += 1
+
+        if hstreak == 6:
+            totalstreak += 1
+            hstreak = 0
+
+print('Chance of streak: %s%%' % (totalstreak / 100))
