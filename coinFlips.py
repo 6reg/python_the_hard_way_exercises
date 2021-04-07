@@ -29,5 +29,5 @@ for c in range(100):
         if hstreak == 6:
             totalstreak += 1
             hstreak = 0
-
+print(totalstreak)
 print('Chance of streak: %s%%' % (totalstreak / 100))
