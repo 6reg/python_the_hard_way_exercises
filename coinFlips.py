@@ -18,7 +18,7 @@ for c in range(100):
         #hstreak = 0
         tstreak += 1
 
-        if tstreak == 6:
+        if tstreak == 55:
             totalstreak += 1
             tstreak = 0
 
@@ -26,8 +26,8 @@ for c in range(100):
         #tstreak = 0
         hstreak += 1
 
-        if hstreak == 6:
+        if hstreak == 55:
             totalstreak += 1
             hstreak = 0
 print(totalstreak)
-print('Chance of streak: %s%%' % (totalstreak / 100))
+print('Chance of streak:', totalstreak / 100)
