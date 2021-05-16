@@ -21,7 +21,7 @@ while True: # Main program loop.
     # Print currentCells on the screen:
     for y in range(HEIGHT):
         for x in range(WIDTH):
-            print(currentCells[x][y], end='') # Pring the # or space.
+            print(currentCells[x][y], end='') # Print the # or space.
         print() # Print a newline at the end of the row
 
     # Calculate the next step's cells based on current step's cells:
